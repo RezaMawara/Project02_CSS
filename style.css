@@ -1,0 +1,71 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #2c525e, #272630); /* Ubah warna background ke gradient biru */
+    color: #fff;
+}
+
+header, footer {
+    background-color: #21222a;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #21222a;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+section {
+    padding: 20px;
+    display: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form p {
+    margin: 0;
+}
+
+.contact-form p span {
+    font-weight: bold;
+}
+
+/* Menampilkan section yang dipilih */
+#home:target,
+#gallery:target,
+#blog:target,
+#contact:target {
+    display: block;
+}
